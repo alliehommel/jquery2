@@ -20,8 +20,14 @@
     </div>
   </div>
   <script>
-    $(".wrong-msg").hide()
-    $(".correct-msg").hide()
+    $(".wrong-msg").hide();
+    $(".correct-msg").hide();
+    $(".btn-right").on("click" , function() {
+      $(".correct-msg").slideDown();
+    });
+    $(".btn-wrong").on("click" , function() {
+      $(".wrong-msg").slideDown();
+    });
   </script>
 </body>
 </html>
